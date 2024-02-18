@@ -197,7 +197,7 @@ import numpy as np
 obj_grad = np.array((objective_gradients))
 dual_grad = np.array(gradients_times_dual)
 
-# balance_kkt should be equalt to zero 
+# derivative_lagrangian should be equal to zero 
 derivative_lagrangian = obj_grad + sum(dual_grad)
 
 if derivative_lagrangian.all() == 0: 
